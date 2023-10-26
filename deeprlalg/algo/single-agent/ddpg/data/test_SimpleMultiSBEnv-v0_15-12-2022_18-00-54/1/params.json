@@ -1,0 +1,42 @@
+{
+ "env": "SimpleMultiSBEnv-v0",
+ "exp_name": "test",
+ "algo": "ddpg",
+ "max_steps": 1000,
+ "data_dir": null,
+ "epochs": 200,
+ "steps_per_epoch": 4000,
+ "buffer_size": 1000000.0,
+ "polyak": 0.995,
+ "gamma": 0.99,
+ "pi_lr": 0.001,
+ "pi_output_activation": "identity",
+ "pi_activation": "tanh",
+ "pi_hidden_sizes": [
+  256,
+  256
+ ],
+ "q_lr": 0.001,
+ "q_output_activation": "identity",
+ "q_activation": "tanh",
+ "q_hidden_sizes": [
+  256,
+  256
+ ],
+ "batch_size": 100,
+ "start_steps": 10000,
+ "update_after": 1000,
+ "update_freq": 50,
+ "action_noise": 0.1,
+ "num_test_episodes": 10,
+ "max_path_length": 100,
+ "save_freq": 1000,
+ "render": false,
+ "seed": 1,
+ "no_gpu": false,
+ "which_gpu": 0,
+ "scalar_log_freq": 1,
+ "save_params": false,
+ "action_noise_std": 0,
+ "logdir": "/home/oyindamola/Research/deeprl-alg/deeprlalg/algo/single-agent/ddpg/data/test_SimpleMultiSBEnv-v0_15-12-2022_18-00-54/1"
+}
